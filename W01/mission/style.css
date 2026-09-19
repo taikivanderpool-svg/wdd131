@@ -1,0 +1,40 @@
+body{
+    width:60%;
+    margin: 0 auto;
+    font-size:20px;
+}
+/*header*/
+header{
+    justify-items: center;
+    margin: 70px;
+}
+
+#header_subtext p{
+    font-size: 0.9em;
+    margin-bottom: -10px;
+    color:lightblue;
+}
+
+hr{
+    width:90%;
+}
+
+/*body*/
+#content{
+    width:75%;
+    margin:0 auto;
+}
+
+.italic{
+    font-style:italic;
+}
+
+li{
+    margin: 1em 0;
+}
+
+img{
+    display:block;
+    max-width: 30%;
+    margin:70px auto;
+}
