@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
+    <meta name = "author" content = "Spencer Vanderpool">
+    <meta description="BYU-I mission statement">
+    <script src="mission.js" defer></script>
 </head>
 <body>
+    <select id="select">
+        <option>Choose Mode</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
     <header>
-        <h1>MISSION STATEMENT</h1>
+        <h1 class="light_mode">MISSION STATEMENT</h1>
 
         <div id="header_subtext">
             <p>BRIGHAM YOUNG UNIVERSITY-IDAHO</p>
         </div>
-        <hr>
+        <hr class="light_mode">
     </header>
     
-    <div id="content">
+    <div id="content" class="light_mode">
         <p>Brigham Young University-Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.</p>
         <p class="italic">The university does this by:</p>
         <ol>
