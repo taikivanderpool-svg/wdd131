@@ -13,7 +13,7 @@ menuButton.addEventListener('click', function (e) {
     else{
         nav.style.display = "";
     }
-
+ 
     //this one line below is a ternary that does what the above if else statement does
     //nav.style.display = nav.style.display === "" ? "flex" : "";
 });
