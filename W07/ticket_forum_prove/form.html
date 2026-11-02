@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket Form</title>
     <link rel="stylesheet" href="form.css">
+    <link rel="icon" href="favicon.png">
     <script src="form.js" defer></script>
 </head>
 <body>
     <main id="wrapper">
         <h1><strong>Event Ticket</strong></h1>
         <form id="ticketForm">
-            <div class="field" id="first">
+            <div class="field" class="first">
                 <label for="firstName">First Name</label>
                 <input id="firstName" name="firstName" type="text" required>
             </div>
@@ -42,7 +43,7 @@
 
             <div class="field" id="code">
                 <label for="VerificationCode" id="codeType" >placeholder</label>
-                <input id="verificationCode" name="VerificationCode" type="text">
+                <input id="verificationCode" name="verificationCode" type="text">
             </div>
 
             <button type="submit" id="submit">Create Ticket</button>
