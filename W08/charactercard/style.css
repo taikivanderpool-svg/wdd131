@@ -1,0 +1,43 @@
+
+#characterCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    line-height: 10px;
+    overflow: hidden;
+    background-color: #313131;
+
+
+}
+img{
+    width: 100%;
+    grid-column: 1/3;
+}
+#characterName{
+    background-color: #5E747C;
+    grid-column: 1/3;
+    margin-top: -5px;
+    color: white;
+}
+h1{
+    margin-left: 12%;
+}
+#stats{
+    margin: 5px;
+    grid-column: 1/3;
+    margin-left: 12%;
+    color: white;
+}
+button{
+    margin: 10px;
+    grid-row: 4/5;
+    background-color: #5E747C;
+    color: white;
+}
+button:hover{
+    background-color: #58615F;
+}
