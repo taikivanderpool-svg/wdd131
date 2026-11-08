@@ -3,7 +3,7 @@ const character = {
     level: 5,
     health: 100,
     attacked: function(){
-        this.health -= 10;
+        this.health -= 20;
     },
     levelUp: function(){
         this.level += 1;
@@ -15,6 +15,11 @@ updateCharacter(character);
 document.querySelector("#attacked").addEventListener("click", e => {
     character.attacked();
     updateCharacter(character);
+    if (character.health <= 0){
+        alert("Your character died");
+        character.health = "☠️";
+        updateCharacter(character);
+    }
 })
 
 document.querySelector("#levelUp").addEventListener("click", e => {
