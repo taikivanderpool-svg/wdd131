@@ -1,11 +1,11 @@
 const character = {
     class: "mid-level buraeucrat",
-    Level: 5,
-    Health: 100,
-    attacked: (e) =>{
+    level: 5,
+    health: 100,
+    attacked: function(){
         this.health -= 10;
     },
-    levelUp: (e) =>{
+    levelUp: function(){
         this.level += 1;
     }
 }
@@ -26,13 +26,8 @@ document.querySelector("#levelUp").addEventListener("click", e => {
 function updateCharacter(character) {
     const html = `
 <p class="stat">Class: ${character.class}</p>
-<p class="stat">Level: ${character.Level}</p>
-<p class="stat">Health: ${character.Health}</p>
+<p class="stat">Level: ${character.level}</p>
+<p class="stat">Health: ${character.health}</p>
 `
     document.querySelector("#stats").innerHTML = html;
 }
-
-character.attacked();
-character.attacked();
-
-updateCharacter(character);
