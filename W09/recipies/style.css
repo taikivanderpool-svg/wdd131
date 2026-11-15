@@ -1,0 +1,139 @@
+
+.amatic-sc-regular {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amatic-sc-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+#head-piece{
+    display: flex;
+    width: 60%;
+    font-family: "Amatic SC", cursive;
+    margin: 1em auto;
+    justify-content: center;
+}
+
+#head-piece img{
+    width: 15%;
+    min-width: 6em;
+    height: auto;
+}
+
+#head-piece h1{
+    font-size: 4em;
+    align-self: flex-end;
+    margin: 0 0;
+}
+
+#find-recipie-form{
+    margin: 0 auto;
+    justify-self: center;
+    width: 60%;
+
+}
+
+#find-recipie{
+    margin: auto;
+    height: 2em;
+    justify-self: center;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 0.5em;
+}
+
+#recipies{
+    margin: 0 auto;
+}
+
+.recipie-box{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border: solid 3px black;
+    margin: 0 auto;
+    padding: 5%;
+    gap: 0.5em;
+    border-radius: 1em;
+}
+
+.recipie-box img{
+    width: 100%;
+    margin: 0 0;
+}
+
+.recipie-box button{
+    width: 5em;
+}
+
+.recipie-box h2{
+    font-family: "Amatic SC", cursive;
+    font-weight: 400;
+    margin: 0 0;
+    color: darkcyan;
+}
+
+.description{
+    display: none;
+}
+
+.social{
+    display: flex;
+    justify-self: center;
+    margin: 1em auto;
+}
+.social > *{
+    width: 2em;
+}
+
+#recipie-icons{
+    display: flex;
+    justify-self: center;
+}
+
+
+@media screen and (min-width: 830px){
+    .description{
+    display: flex;
+    width: 43%;
+    }
+
+    .recipie-box{
+        flex-wrap: wrap;
+        width: 80%;
+        height: 300px;
+        padding: 1em;
+        min-width: 0;
+    }
+    
+    .recipie-box img{
+        
+        height: 100%;
+        width: auto;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 80%;
+        justify-self: center;
+    }
+
+    .social{
+        justify-content: flex-end;
+        justify-self: flex-end;
+        margin: 1em 0;
+    }
+
+    #recipie-icons{
+        margin: 1em;
+    }
+
+}
