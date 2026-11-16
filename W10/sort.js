@@ -87,10 +87,18 @@ const filteredHikes = hikes.filter((hike) => {
                     .includes(searchText.toLowerCase());
 });
 
+const sortedHikes = filteredHikes.sort(sortHikes);
 //display those matches
-displayResults(filteredHikes);
-
+displayResults(sortedHikes);
 })
+
+function sortHikes(a, b) {
+  //we get to decide how to sort this custom object
+  if (a.difficulty > b.difficulty) return 1;
+  else if (a.difficulty < b.difficulty) return -1;
+  return 0;
+}
+
 
 function displayResults(filteredHikes){
     const hikeContainer = document.querySelector("#hike-container");
